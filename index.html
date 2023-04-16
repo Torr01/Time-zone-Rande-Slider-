@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project 1</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Slide to know the time zone gap!</h1>    
+    </div>
+    <div class="container burly">
+        <div class="container upper">
+            <div class="container map">
+                <img src="https://www.nist.gov/sites/default/files/images/2019/12/23/worldzones.gif" alt="Time zone map">
+            </div>
+            <div class="container time burly">
+                <h2><output id="time-1">0</output></h2>
+            </div>
+        </div>
+        <div class="container-time">
+        <div class="container-range">
+            <div class="range-slider">
+                <div class="progress"></div>
+                <h3>Choose a time range</h3>
+                <input type="range" min="0" max="24" id="slider-1" list="markers">
+                <input type="range" min="0" max="24" id="slider-2" list="markers">
+                <datalist id="markers">
+                    <option value="-12"></option>
+                    <option value="-11"></option>
+                    <option value="-10"></option>
+                    <option value="-9"></option>
+                    <option value="-8"></option>
+                    <option value="-7"></option>
+                    <option value="-6"></option>
+                    <option value="-5"></option>
+                    <option value="-4"></option>
+                    <option value="-3"></option>
+                    <option value="-2"></option>
+                    <option value="-1"></option>
+                    <option value="0"></option>
+                    <option value="+1"></option>
+                    <option value="+2"></option>
+                    <option value="+3"></option>
+                    <option value="+4"></option>
+                    <option value="+5"></option>
+                    <option value="+6"></option>
+                    <option value="+7"></option>
+                    <option value="+8"></option>
+                    <option value="+9"></option>
+                    <option value="+10"></option>
+                    <option value="+11"></option>
+                    <option value="+12"></option>
+                </datalist>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
